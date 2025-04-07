@@ -1274,7 +1274,7 @@ audio {
 .memory-wall{  
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 30px 0;
+	margin: 150px 40px;
 	display: none;
 }
 .message p {
