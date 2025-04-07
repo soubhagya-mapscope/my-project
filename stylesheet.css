@@ -12,7 +12,7 @@ body {
 	display: none;
 }
 .peach {
-	background-color: #FFDAB9;
+	background-color: #f5a9a9;
 	
 }
 .peach-after {
@@ -1260,7 +1260,7 @@ audio {
 	bottom: 0;
 	padding:10px 0px 10px 0px;
 }
-#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
+#play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story,#memory_wall {
 	display: none;
 }
 
@@ -1269,6 +1269,12 @@ audio {
 }
 .message {
 	margin-top: 200px;
+	display: none;
+}
+.memory-wall{  
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px 0;
 	display: none;
 }
 .message p {
@@ -1301,7 +1307,23 @@ audio {
     }
 
 
-
+	 
+	.memory-photo {
+		width: 120px;
+		height: 120px;
+		margin: 5px;
+		border-radius: 10px;
+		object-fit: cover;
+		transition: all 0.3s ease;
+		box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		opacity: 0;
+		animation: fadeIn 1s forwards;
+		animation-delay: calc(var(--delay) * 0.5s);
+	}
+	@keyframes fadeIn {
+		from { opacity: 0; transform: scale(0.8); }
+		to { opacity: 1; transform: scale(1); }
+	}
     /*controlling tablet width*/
     /*@media only screen and (max-width: 720px){
     	.container {
