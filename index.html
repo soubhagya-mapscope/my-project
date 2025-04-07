@@ -19,12 +19,35 @@
 	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="cake.less">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+
+	<style>
+        body {
+            font-family: 'Signika', sans-serif;
+            background-color: #fffaf5;
+        }
+        .birthday-images {
+            margin: 40px 0;
+            text-align: center;
+        }
+        .birthday-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            margin: 10px;
+            max-height: 400px;
+        }
+        .message p {
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 	<div class="loading"></div>
 	<audio class="song" controls loop>
-        <source src="hbd1.mp3"></source>
+        <source src="hbd1.mpeg"></source>
 	   Your browser isn't invited for super fun audio time.
     </audio>
     <div class="balloons text-center" id="b1">
@@ -99,8 +122,16 @@
 				<p>A very happy birthday, Ananya!</p>
 				<p>Thank you for filling my world with so much happiness. Here's to many more birthdays and memories together. ❤️</p>
 			</div>
-			
+			<div class="row birthday-images">
+				<div class="col-sm-6">
+					<img src="ananya.jpeg" alt="Birthday Girl 1">
+				</div>
+			</div>
+	 
 		</div>
+		  <!-- 🎈 Birthday Images Section -->
+		  
+
 		<div class="navbar navbar-fixed-bottom">
 			<div class="row">
 				<div class="col-md-6 text-center col-md-offset-3">
